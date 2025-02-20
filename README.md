@@ -125,3 +125,42 @@ public class CustoCarro{
      }
 }
 ```
+
+## Quinto Exercicio ## 
+
+```
+/* Atividade cinco */
+
+import java.util.Scanner;
+
+public class SalarioFuncionario{
+
+     public static void main(String []args){
+         Scanner sc = new Scanner(System.in);
+         
+         double comissao, salarioTotal, comissaoTotal;
+         double valorUnit;
+         
+        System.out.println("Digite aqui o salario fixo: ");
+        int salarioFixo = sc.nextInt();
+        
+        System.out.println("Digite aqui o valor total das vendas: ");
+        int valorVenda = sc.nextInt();
+        
+        System.out.println("Digite aqui quantos carros o funcionario vendeu: ");
+        int quantCarro = sc.nextInt();
+        
+    
+        valorUnit = (valorVenda/quantCarro);
+        
+        comissao = (0.05 * valorVenda);
+        comissaoTotal = comissao * quantCarro; 
+        salarioTotal = salarioFixo + comissaoTotal;
+        
+        System.out.println("O valor unitario de cada carro vendido, foi de: " + valorUnit);
+        
+        System.out.println("O salario final, foi de: " + salarioTotal);
+        
+     }
+}
+```
