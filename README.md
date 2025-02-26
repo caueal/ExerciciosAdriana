@@ -164,3 +164,246 @@ public class SalarioFuncionario{
      }
 }
 ```
+
+## Sexto exercicio ##
+```
+/* Exercicio Seis */
+
+import java.util.Scanner; 
+
+public class ConvertorGraus {
+    
+    public static void main(String []args){
+    double convertorFaren;   
+
+    Scanner sc = new Scanner(System.in);
+
+    System.out.println("Digita aqui a temperatura em Celsius: ");
+    int tempCelsius = sc.nextInt();
+    
+    convertorFaren = (1.8*tempCelsius) + 32;
+    
+    System.out.println("Esse aqui e a temperatura convertida em Farenheit" + convertorFaren);
+
+}
+}
+```
+
+## Setimo exercicio ##
+
+```
+/* Exercicio Sete */
+
+import java.util.Scanner; 
+
+public class CondicaoDez{
+    
+    public static void main(String []args){
+
+    Scanner sc = new Scanner(System.in);
+
+    System.out.println("Digita aqui um valor: ");
+    int valor = sc.nextInt();
+    
+    if (valor > 10) {
+        System.out.println("Valor e maior que 10");
+    } else if (valor < 10){
+        System.out.println("Valor e menor que 10");
+    }
+}
+}
+```
+
+## Oitavo exercicio ##
+
+```
+/* Exercicio Oito */
+
+import java.util.Scanner; 
+
+public class NegativoPositivo{
+    
+    public static void main(String []args){
+
+    Scanner sc = new Scanner(System.in);
+
+    System.out.println("Digita aqui um valor: ");
+    int valor = sc.nextInt();
+    
+    if (valor <= 0) {
+        System.out.println("Valor e negativo");
+    } else if (valor > 0){
+        System.out.println("Valor e positivo");
+    }
+}
+}
+```
+
+## Nono exercicio ##
+
+```
+/* Exercicio Nove */
+
+import java.util.Scanner; 
+
+public class Macas{
+    
+    public static void main(String []args){
+        
+    double valorUnit, precoFinal;
+
+    Scanner sc = new Scanner(System.in);
+
+    System.out.println("Digita aqui quantas macas comprou");
+    int quantia = sc.nextInt();
+    
+    if (quantia < 12) {
+        System.out.println("O preco final foi de: " + (1.30*quantia));
+    } else if (quantia >= 12){
+               System.out.println("O preco final foi de: " + (1*quantia));
+    }
+
+}
+}
+```
+
+## Décimo exercicio ##
+
+```
+/* Exercicio Dez */
+
+import java.util.Scanner; 
+
+public class MediaSimples{
+    
+    public static void main(String []args){
+        
+    double media;
+
+    Scanner sc = new Scanner(System.in);
+
+    System.out.println("Nota da 1a: ");
+    int nota1 = sc.nextInt();
+    
+    System.out.println("Nota da 2a: ");
+    int nota2 = sc.nextInt();
+    
+    media = (nota1 + nota2)/2;
+    
+    if (media >= 6) {
+        System.out.println("O aluno passou, com a media de: " + media);
+    } else if (media < 6){
+               System.out.println("O aluno reprovou com a media de: " + media);
+    }
+
+}
+}
+```
+
+## Décimo primeiro Exercicio ## 
+
+```
+/* Exercicio Onze */
+
+import java.util.Scanner; 
+
+public class votacao{
+    
+    public static void main(String []args){
+        
+    int idade;
+
+    Scanner sc = new Scanner(System.in);
+
+    System.out.println("Digite seu ano de nascimento");
+    int nasc = sc.nextInt();
+    
+    idade = (2024 - nasc);
+    
+    if (idade >= 18) {
+        System.out.println("Parabens voce pode votar");
+    } else if (idade < 18){
+       System.out.println("Voce nao pode votar");
+    }
+
+}
+}
+```
+
+## Décimo Segundo Exercicio ## 
+
+```
+/* Exercicio Doze */
+
+import java.util.Scanner; 
+
+public class MaiorMenor{
+    
+    public static void main(String []args){
+        
+    int comparador;
+
+    Scanner sc = new Scanner(System.in);
+
+    System.out.println("Digite o 1 valor");
+    int valor1 = sc.nextInt();
+    
+    System.out.println("Digite o 2 valor");
+    int valor2 = sc.nextInt();
+  
+    if (valor1 > valor2) {
+       System.out.println("O primeiro valor: " + valor1 + ", E o maior");
+    } else if (valor1 < valor2){
+       System.out.println("O segundo valor: " + valor2 + ", E o maior");
+    } else if (valor1 == valor2) {
+       System.out.println("Ambos valores sao iguais");
+     }
+
+}
+}
+```
+
+## Decimo terceiro exercicio ## 
+
+```
+/* Exercicio Treze */
+
+import java.util.Scanner; 
+
+public class Crescente{
+    
+    public static void main(String []args){
+        
+    int comparador;
+
+    Scanner sc = new Scanner(System.in);
+
+    System.out.println("Digite o 1 valor");
+    int valor1 = sc.nextInt();
+    
+    System.out.println("Digite o 2 valor");
+    int valor2 = sc.nextInt();
+  
+    if (valor1 > valor2) {
+       System.out.println(valor2 + "," + valor1);
+    } else if (valor1 < valor2){
+       System.out.println(valor1 + "," +valor2);
+    } else if (valor1 == valor2) {
+       System.out.println("Ambos valores sao iguais");
+     }
+
+}
+}
+```
+
+## Décimo Quarto Exercicio ##
+
+```
+
+
+
+
+
+
+
+
