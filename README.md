@@ -166,7 +166,7 @@ public class CustoCarro{
      double distribuidor, imposto, custoDis, custoImp, preco;
  
      System.out.println("Escreva o custo de fabrica do carro:");
-     double custo = sc.nextInt();
+     double custo = sc.nextDouble();
      
      distribuidor = (28*custo/100);
      imposto = (45*custo/100);
@@ -178,6 +178,20 @@ public class CustoCarro{
      }
 }
 ```
+
+### Teste de Mesa quarto exercicio
+
+Dados:
+- **Custo de fábrica do carro:** 50.000  
+
+| Passo | Entrada | Variáveis | Cálculo Realizado | Valor Resultante |
+|-------|--------------------|----------------------|------------------|----------------|
+| 1     | 50000 (custo)      | `custo = 50000`     | -                | `custo = 50000` |
+| 2     | -                 | `distribuidor = 28 * custo / 100` | `28 * 50000 / 100` | `distribuidor = 14000` |
+| 3     | -                 | `imposto = 45 * custo / 100` | `45 * 50000 / 100` | `imposto = 22500` |
+| 4     | -                 | `preco = custo + distribuidor + imposto` | `50000 + 14000 + 22500` | `preco = 86500` |
+| 5     | -                 | Exibe resultado      | `"O custo final do carro sera de: 86500"` | - |
+
 
 ## Quinto Exercicio ## 
 
