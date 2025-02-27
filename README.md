@@ -858,8 +858,6 @@ public class SalarioComHoraExtra {
         }
 
         System.out.println("O salario total do funcionário e: RS " + salarioTotal);
-
-        sc.close();
     }
 }
 ```
@@ -897,6 +895,53 @@ public class SalarioComHoraExtra {
 | 6     | -                          | `horasExtras = 180 - 160`       | `horasExtras = 20`                 | -                     |
 | 7     | -                          | `valorHoraExtra = 10 * 1.5`     | `valorHoraExtra = 15`              | -                     |
 | 8     | -                          | `salarioTotal = salarioBase + (horasExtras * valorHoraExtra)` | `salarioTotal = 1600 + (20 * 15)` | `Salário Total = R$ 1900,00` |
+
+## Décimo sexto exercicio 
+
+```
+/*Exercicio 16*/
+
+public class DespesasTrimestrais {
+    public static void main(String[] args) {
+
+        double janeiro = 15000; 
+        double fevereiro = 23000; 
+        double marco = 17000;
+
+        double gastoTotal = janeiro + fevereiro + marco;
+
+        double mediaMensal = gastoTotal / 3;
+
+        // Exibindo os resultados
+        System.out.println("Gasto total no primeiro trimestre: R$ " + gastoTotal);
+        System.out.println("Média mensal de gastos: R$ " + mediaMensal);
+    }
+}
+```
+
+### Teste de Mesa 16
+
+#### Caso 1: Despesas de Janeiro, Fevereiro e Março
+**Dados:**
+- Janeiro: R$ 15.000,00
+- Fevereiro: R$ 23.000,00
+- Março: R$ 17.000,00
+
+| Passo | Entrada do Usuário         | Variáveis Modificadas           | Cálculo Realizado                  | Saída                 |
+|-------|----------------------------|---------------------------------|------------------------------------|-----------------------|
+| 1     | Janeiro = 15000            | `janeiro = 15000`               | -                                  | -                     |
+| 2     | Fevereiro = 23000          | `fevereiro = 23000`             | -                                  | -                     |
+| 3     | Março = 17000              | `marco = 17000`                 | -                                  | -                     |
+| 4     | -                          | `gastoTotal = janeiro + fevereiro + marco` | `gastoTotal = 15000 + 23000 + 17000` | `gastoTotal = 55000`  |
+| 5     | -                          | `mediaMensal = gastoTotal / 3`  | `mediaMensal = 55000 / 3`          | `mediaMensal = 18333.33` |
+| 6     | -                          | -                               | -                                  | `Gasto total = R$ 55.000,00`  |
+| 7     | -                          | -                               | -                                  | `Média mensal = R$ 18.333,33` |
+
+## Décimo sétimo exercicio 
+
+N/D
+
+
 
 
 
