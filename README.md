@@ -37,6 +37,23 @@ public class LeitorIdade{
 }
 ```
 
+### Teste de Mesa
+
+Dados:
+- **Idade (anos):** 20  
+- **Meses:** 5  
+- **Dias:** 10  
+
+| Passo | Entrada | Variáveis  | Cálculo Realizado | Valor Resultante |
+|-------|-------------------|----------------------|------------------|----------------|
+| 1     | 20 (anos)         | `ano = 20`          | -                | `ano = 20`     |
+| 2     | 5 (meses)         | `mes = 5`           | -                | `mes = 5`      |
+| 3     | 10 (dias)         | `dia = 10`          | -                | `dia = 10`     |
+| 4     | -                 | `anoEx = 365 * ano` | `365 * 20`       | `anoEx = 7300` |
+| 5     | -                 | `mesEx = 30 * mes`  | `30 * 5`         | `mesEx = 150`  |
+| 6     | -                 | `total = anoEx + mesEx + dia` | `7300 + 150 + 10` | `total = 7460` |
+| 7     | -                 | Exibe resultado     | `O seu total de dias de vida é: 7460` | - |
+
 ## Segundo Exercicio ##
 
 ```
