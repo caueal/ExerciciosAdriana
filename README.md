@@ -583,9 +583,9 @@ public class votacao{
 ### Teste de Mesa decimo primeiro exercicio
 
 Dados:
-1️⃣ **Entrada: Ano de nascimento = 2000**  
-2️⃣ **Entrada: Ano de nascimento = 2010**  
-3️⃣ **Entrada: Ano de nascimento = 2006**  
+1 **Entrada: Ano de nascimento = 2000**  
+2 **Entrada: Ano de nascimento = 2010**  
+3 **Entrada: Ano de nascimento = 2006**  
 
 ---
 
@@ -659,9 +659,9 @@ public class MaiorMenor{
 ### Teste de Mesa decimo segundo exercicio
 
 Dados:
-1️⃣ **Entrada: valor1 = 10, valor2 = 20**  
-2️⃣ **Entrada: valor1 = 50, valor2 = 30**  
-3️⃣ **Entrada: valor1 = 15, valor2 = 15**  
+1 **Entrada: valor1 = 10, valor2 = 20**  
+2 **Entrada: valor1 = 50, valor2 = 30**  
+3 **Entrada: valor1 = 15, valor2 = 15**  
 
 ---
 
@@ -736,9 +736,9 @@ public class Crescente{
 ### Teste de Mesa Decimo terceiro exercicio
 
 Dados:
-1️⃣ **Entrada: valor1 = 10, valor2 = 20**  
-2️⃣ **Entrada: valor1 = 50, valor2 = 30**  
-3️⃣ **Entrada: valor1 = 15, valor2 = 15**  
+1 **Entrada: valor1 = 10, valor2 = 20**  
+2 **Entrada: valor1 = 50, valor2 = 30**  
+3 **Entrada: valor1 = 15, valor2 = 15**  
 
 ---
 
