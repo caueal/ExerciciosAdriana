@@ -232,6 +232,26 @@ public class SalarioFuncionario{
 }
 ```
 
+### Teste de Mesa quinto exercicio ###
+
+Dados:
+- **Salário fixo:** 2000  
+- **Valor total das vendas:** 100.000  
+- **Quantidade de carros vendidos:** 5  
+
+| Passo | Entrada | Variáveis | Cálculo Realizado | Valor Resultante |
+|-------|--------------------|----------------------|------------------|----------------|
+| 1     | 2000 (salário fixo) | `salarioFixo = 2000` | -                | `salarioFixo = 2000` |
+| 2     | 100000 (valor total das vendas) | `valorVenda = 100000` | -                | `valorVenda = 100000` |
+| 3     | 5 (quantidade de carros vendidos) | `quantCarro = 5` | -                | `quantCarro = 5` |
+| 4     | -                 | `valorUnit = valorVenda / quantCarro` | `100000 / 5` | `valorUnit = 20000` |
+| 5     | -                 | `comissao = 0.05 * valorVenda` | `0.05 * 100000` | `comissao = 5000` |
+| 6     | -                 | `comissaoTotal = comissao * quantCarro` | `5000 * 5` | `comissaoTotal = 25000` |
+| 7     | -                 | `salarioTotal = salarioFixo + comissaoTotal` | `2000 + 25000` | `salarioTotal = 27000` |
+| 8     | -                 | Exibe resultado      | `"O valor unitario de cada carro vendido, foi de: 20000"` | - |
+| 9     | -                 | Exibe resultado      | `"O salario final, foi de: 27000"` | - |
+
+
 ## Sexto exercicio ##
 ```
 /* Exercicio Seis */
@@ -256,6 +276,20 @@ public class ConvertorGraus {
 }
 ```
 
+### Teste de Mesa Sexto exercicio
+
+Dados:
+- **Temperatura em Celsius:** 25  
+
+| Passo | Entrada | Variáveis | Cálculo Realizado | Valor Resultante |
+|-------|--------------------|----------------------|------------------|----------------|
+| 1     | 25 (temperatura em Celsius) | `tempCelsius = 25` | -                | `tempCelsius = 25` |
+| 2     | -                 | `convertorFaren = (1.8 * tempCelsius) + 32` | `(1.8 * 25) + 32` | `convertorFaren = 77.0` |
+| 3     | -                 | Exibe resultado      | `"Esse aqui e a temperatura convertida em Farenheit 77.0"` | - |
+
+
+
+
 ## Setimo exercicio ##
 
 ```
@@ -276,10 +310,44 @@ public class CondicaoDez{
         System.out.println("Valor e maior que 10");
     } else if (valor < 10){
         System.out.println("Valor e menor que 10");
-    }
+    } else {
+        System.out.println("Valor e igual a 10");
+}
 }
 }
 ```
+
+### Teste de Mesa Setimo exercicio
+
+Dados:
+1 **Entrada: 15**  
+2 **Entrada: 5**  
+3 **Entrada: 10**  
+
+| Passo | Entrada | Variáveis | Cálculo Realizado | Valor Resultante |
+|-------|--------------------|----------------------|------------------|----------------|
+| 1     | 15                | `valor = 15`        | -                | `valor = 15` |
+| 2     | -                 | Verifica condição `if (valor > 10)` | `15 > 10` (Verdadeiro) | - |
+| 3     | -                 | Exibe resultado      | `"Valor e maior que 10"` | - |
+
+---
+
+| Passo | Entrada | Variáveis | Cálculo Realizado | Valor Resultante |
+|-------|--------------------|----------------------|------------------|----------------|
+| 1     | 5                 | `valor = 5`         | -                | `valor = 5` |
+| 2     | -                 | Verifica condição `if (valor > 10)` | `5 > 10` (Falso) | - |
+| 3     | -                 | Verifica `else if (valor < 10)` | `5 < 10` (Verdadeiro) | - |
+| 4     | -                 | Exibe resultado      | `"Valor e menor que 10"` | - |
+
+---
+
+| Passo | Entrada | Variáveis | Cálculo Realizado | Valor Resultante |
+|-------|--------------------|----------------------|------------------|----------------|
+| 1     | 10                | `valor = 10`        | -                | `valor = 10` |
+| 2     | -                 | Verifica condição `if (valor > 10)` | `10 > 10` (Falso) | - |
+| 3     | -                 | Verifica `else if (valor < 10)` | `10 < 10` (Falso) | - |
+| 4     | -                 | Nenhuma condição foi satisfeita | `"Valor e igual a 10"` | - |
+
 
 ## Oitavo exercicio ##
 
@@ -305,6 +373,33 @@ public class NegativoPositivo{
 }
 }
 ```
+
+### Teste de Mesa oitavo exercicio
+
+Dados:
+1 **Entrada: -5**  
+2 **Entrada: 10**  
+
+---
+
+#### Caso 1: Entrada = -5
+
+| Passo | Entrada | Variáveis | Cálculo Realizado | Valor Resultante |
+|-------|--------------------|----------------------|------------------|----------------|
+| 1     | -5                | `valor = -5`         | -                | `valor = -5` |
+| 2     | -                 | Verifica condição `if (valor <= 0)` | `-5 <= 0` (Verdadeiro) | - |
+| 3     | -                 | Exibe resultado      | `"Valor e negativo"` | - |
+
+---
+
+#### Caso 2: Entrada = 10
+
+| Passo | Entrada | Variáveis | Cálculo Realizado | Valor Resultante |
+|-------|--------------------|----------------------|------------------|----------------|
+| 1     | 10                | `valor = 10`         | -                | `valor = 10` |
+| 2     | -                 | Verifica condição `if (valor <= 0)` | `10 <= 0` (Falso) | - |
+| 3     | -                 | Verifica `else if (valor > 0)` | `10 > 0` (Verdadeiro) | - |
+| 4     | -                 | Exibe resultado      | `"Valor e positivo"` | - |
 
 ## Nono exercicio ##
 
@@ -334,6 +429,49 @@ public class Macas{
 }
 ```
 
+### Teste de Mesa nono exercicio
+
+Dados:
+1 **Entrada: 10 maçãs**  
+2 **Entrada: 12 maçãs**  
+3 **Entrada: 20 maçãs**  
+
+---
+
+#### Caso 1: Entrada = 10 maçãs
+
+| Passo | Entrada | Variáveis | Cálculo Realizado | Valor Resultante |
+|-------|--------------------|----------------------|------------------|----------------|
+| 1     | 10                | `quantia = 10`       | -                | `quantia = 10` |
+| 2     | -                 | Verifica condição `if (quantia < 12)` | `10 < 12` (Verdadeiro) | - |
+| 3     | -                 | Calcula preço final  | `1.30 * 10` | `precoFinal = 13.0` |
+| 4     | -                 | Exibe resultado      | `"O preco final foi de: 13.0"` | - |
+
+---
+
+#### Caso 2: Entrada = 12 maçãs
+
+| Passo | Entrada | Variáveis | Cálculo Realizado | Valor Resultante |
+|-------|--------------------|----------------------|------------------|----------------|
+| 1     | 12                | `quantia = 12`       | -                | `quantia = 12` |
+| 2     | -                 | Verifica condição `if (quantia < 12)` | `12 < 12` (Falso) | - |
+| 3     | -                 | Verifica `else if (quantia >= 12)` | `12 >= 12` (Verdadeiro) | - |
+| 4     | -                 | Calcula preço final  | `1.0 * 12` | `precoFinal = 12.0` |
+| 5     | -                 | Exibe resultado      | `"O preco final foi de: 12.0"` | - |
+
+---
+
+#### Caso 3: Entrada = 20 maçãs
+
+| Passo | Entrada  | Variáveis | Cálculo Realizado | Valor Resultante |
+|-------|--------------------|----------------------|------------------|----------------|
+| 1     | 20                | `quantia = 20`       | -                | `quantia = 20` |
+| 2     | -                 | Verifica condição `if (quantia < 12)` | `20 < 12` (Falso) | - |
+| 3     | -                 | Verifica `else if (quantia >= 12)` | `20 >= 12` (Verdadeiro) | - |
+| 4     | -                 | Calcula preço final  | `1.0 * 20` | `precoFinal = 20.0` |
+| 5     | -                 | Exibe resultado      | `"O preco final foi de: 20.0"` | - |
+
+
 ## Décimo exercicio ##
 
 ```
@@ -350,10 +488,10 @@ public class MediaSimples{
     Scanner sc = new Scanner(System.in);
 
     System.out.println("Nota da 1a: ");
-    int nota1 = sc.nextInt();
+    double nota1 = sc.nextDouble();
     
     System.out.println("Nota da 2a: ");
-    int nota2 = sc.nextInt();
+    double nota2 = sc.nextDouble();
     
     media = (nota1 + nota2)/2;
     
@@ -366,6 +504,51 @@ public class MediaSimples{
 }
 }
 ```
+### Teste de Mesa décimo exercicio
+
+Dados:
+1 **Entrada: Nota 1 = 8, Nota 2 = 6**  
+2 **Entrada: Nota 1 = 5, Nota 2 = 4**  
+3 **Entrada: Nota 1 = 6, Nota 2 = 6**  
+
+---
+
+#### Caso 1: Nota 1 = 8, Nota 2 = 6
+
+| Passo | Entrada | Variáveis | Cálculo Realizado | Valor Resultante |
+|-------|--------------------|----------------------|------------------|----------------|
+| 1     | 8                 | `nota1 = 8`          | -                | `nota1 = 8` |
+| 2     | 6                 | `nota2 = 6`          | -                | `nota2 = 6` |
+| 3     | -                 | Calcula média        | `(8 + 6) / 2` | `media = 7.0` |
+| 4     | -                 | Verifica condição `if (media >= 6)` | `7.0 >= 6` (Verdadeiro) | - |
+| 5     | -                 | Exibe resultado      | `"O aluno passou, com a media de: 7.0"` | - |
+
+---
+
+#### Caso 2: Nota 1 = 5, Nota 2 = 4
+
+| Passo | Entrada | Variáveis | Cálculo Realizado | Valor Resultante |
+|-------|--------------------|----------------------|------------------|----------------|
+| 1     | 5                 | `nota1 = 5`          | -                | `nota1 = 5` |
+| 2     | 4                 | `nota2 = 4`          | -                | `nota2 = 4` |
+| 3     | -                 | Calcula média        | `(5 + 4) / 2` | `media = 4.5` |
+| 4     | -                 | Verifica condição `if (media >= 6)` | `4.5 >= 6` (Falso) | - |
+| 5     | -                 | Verifica `else if (media < 6)` | `4.5 < 6` (Verdadeiro) | - |
+| 6     | -                 | Exibe resultado      | `"O aluno reprovou com a media de: 4.5"` | - |
+
+---
+
+#### Caso 3: Nota 1 = 6, Nota 2 = 6
+
+| Passo | Entrada | Variáveis | Cálculo Realizado | Valor Resultante |
+|-------|--------------------|----------------------|------------------|----------------|
+| 1     | 6                 | `nota1 = 6`          | -                | `nota1 = 6` |
+| 2     | 6                 | `nota2 = 6`          | -                | `nota2 = 6` |
+| 3     | -                 | Calcula média        | `(6 + 6) / 2` | `media = 6.0` |
+| 4     | -                 | Verifica condição `if (media >= 6)` | `6.0 >= 6` (Verdadeiro) | - |
+| 5     | -                 | Exibe resultado      | `"O aluno passou, com a media de: 6.0"` | - |
+
+
 
 ## Décimo primeiro Exercicio ## 
 
@@ -396,6 +579,49 @@ public class votacao{
 }
 }
 ```
+
+### Teste de Mesa decimo primeiro exercicio
+
+Dados:
+1️⃣ **Entrada: Ano de nascimento = 2000**  
+2️⃣ **Entrada: Ano de nascimento = 2010**  
+3️⃣ **Entrada: Ano de nascimento = 2006**  
+
+---
+
+#### Caso 1: Ano de nascimento = 2000
+
+| Passo | Entrada | Variáveis | Cálculo Realizado | Valor Resultante |
+|-------|--------------------|----------------------|------------------|----------------|
+| 1     | 2000              | `nasc = 2000`       | -                | `nasc = 2000` |
+| 2     | -                 | Calcula idade       | `2024 - 2000` | `idade = 24` |
+| 3     | -                 | Verifica condição `if (idade >= 18)` | `24 >= 18` (Verdadeiro) | - |
+| 4     | -                 | Exibe resultado      | `"Parabéns, você pode votar"` | - |
+
+---
+
+#### Caso 2: Ano de nascimento = 2010
+
+| Passo | Entrada | Variáveis | Cálculo Realizado | Valor Resultante |
+|-------|--------------------|----------------------|------------------|----------------|
+| 1     | 2010              | `nasc = 2010`       | -                | `nasc = 2010` |
+| 2     | -                 | Calcula idade       | `2024 - 2010` | `idade = 14` |
+| 3     | -                 | Verifica condição `if (idade >= 18)` | `14 >= 18` (Falso) | - |
+| 4     | -                 | Verifica `else if (idade < 18)` | `14 < 18` (Verdadeiro) | - |
+| 5     | -                 | Exibe resultado      | `"Você não pode votar"` | - |
+
+---
+
+#### Caso 3: Ano de nascimento = 2006
+
+| Passo | Entrada | Variáveis | Cálculo Realizado | Valor Resultante |
+|-------|--------------------|----------------------|------------------|----------------|
+| 1     | 2006              | `nasc = 2006`       | -                | `nasc = 2006` |
+| 2     | -                 | Calcula idade       | `2024 - 2006` | `idade = 18` |
+| 3     | -                 | Verifica condição `if (idade >= 18)` | `18 >= 18` (Verdadeiro) | - |
+| 4     | -                 | Exibe resultado      | `"Parabéns, você pode votar"` | - |
+
+
 
 ## Décimo Segundo Exercicio ## 
 
@@ -430,6 +656,50 @@ public class MaiorMenor{
 }
 ```
 
+### Teste de Mesa decimo segundo exercicio
+
+Dados:
+1️⃣ **Entrada: valor1 = 10, valor2 = 20**  
+2️⃣ **Entrada: valor1 = 50, valor2 = 30**  
+3️⃣ **Entrada: valor1 = 15, valor2 = 15**  
+
+---
+
+#### Caso 1: `valor1 = 10`, `valor2 = 20`
+
+| Passo | Entrada | Variáveis | Cálculo Realizado | Valor Resultante |
+|-------|--------------------|----------------------|------------------|----------------|
+| 1     | 10                | `valor1 = 10`       | -                | `valor1 = 10` |
+| 2     | 20                | `valor2 = 20`       | -                | `valor2 = 20` |
+| 3     | -                 | Verifica `if (valor1 > valor2)` | `10 > 20` (Falso) | - |
+| 4     | -                 | Verifica `else if (valor1 < valor2)` | `10 < 20` (Verdadeiro) | - |
+| 5     | -                 | Exibe resultado      | `"O segundo valor: 20, é o maior"` | - |
+
+---
+
+#### Caso 2: `valor1 = 50`, `valor2 = 30`
+
+| Passo | Entrada | Variáveis | Cálculo Realizado | Valor Resultante |
+|-------|--------------------|----------------------|------------------|----------------|
+| 1     | 50                | `valor1 = 50`       | -                | `valor1 = 50` |
+| 2     | 30                | `valor2 = 30`       | -                | `valor2 = 30` |
+| 3     | -                 | Verifica `if (valor1 > valor2)` | `50 > 30` (Verdadeiro) | - |
+| 4     | -                 | Exibe resultado      | `"O primeiro valor: 50, é o maior"` | - |
+
+---
+
+#### Caso 3: `valor1 = 15`, `valor2 = 15`
+
+| Passo | Entrada | Variáveis | Cálculo Realizado | Valor Resultante |
+|-------|--------------------|----------------------|------------------|----------------|
+| 1     | 15                | `valor1 = 15`       | -                | `valor1 = 15` |
+| 2     | 15                | `valor2 = 15`       | -                | `valor2 = 15` |
+| 3     | -                 | Verifica `if (valor1 > valor2)` | `15 > 15` (Falso) | - |
+| 4     | -                 | Verifica `else if (valor1 < valor2)` | `15 < 15` (Falso) | - |
+| 5     | -                 | Verifica `else if (valor1 == valor2)` | `15 == 15` (Verdadeiro) | - |
+| 6     | -                 | Exibe resultado      | `"Ambos valores são iguais"` | - |
+
+
 ## Decimo terceiro exercicio ## 
 
 ```
@@ -462,6 +732,50 @@ public class Crescente{
 }
 }
 ```
+
+### Teste de Mesa Decimo terceiro exercicio
+
+Dados:
+1️⃣ **Entrada: valor1 = 10, valor2 = 20**  
+2️⃣ **Entrada: valor1 = 50, valor2 = 30**  
+3️⃣ **Entrada: valor1 = 15, valor2 = 15**  
+
+---
+
+#### Caso 1: `valor1 = 10`, `valor2 = 20`
+
+| Passo | Entrada | Variáveis | Cálculo Realizado | Saída |
+|-------|--------------------|----------------------|------------------|----------------|
+| 1     | 10                | `valor1 = 10`       | -                | - |
+| 2     | 20                | `valor2 = 20`       | -                | - |
+| 3     | -                 | Verifica `if (valor1 > valor2)` | `10 > 20` (Falso) | - |
+| 4     | -                 | Verifica `else if (valor1 < valor2)` | `10 < 20` (Verdadeiro) | - |
+| 5     | -                 | Exibe resultado      | `"10,20"` | `10,20` |
+
+---
+
+#### Caso 2: `valor1 = 50`, `valor2 = 30`
+
+| Passo | Entrada | Variáveis | Cálculo Realizado | Saída |
+|-------|--------------------|----------------------|------------------|----------------|
+| 1     | 50                | `valor1 = 50`       | -                | - |
+| 2     | 30                | `valor2 = 30`       | -                | - |
+| 3     | -                 | Verifica `if (valor1 > valor2)` | `50 > 30` (Verdadeiro) | - |
+| 4     | -                 | Exibe resultado      | `"30,50"` | `30,50` |
+
+---
+
+#### Caso 3: `valor1 = 15`, `valor2 = 15`
+
+| Passo | Entrada | Variáveis | Cálculo Realizado | Saída |
+|-------|--------------------|----------------------|------------------|----------------|
+| 1     | 15                | `valor1 = 15`       | -                | - |
+| 2     | 15                | `valor2 = 15`       | -                | - |
+| 3     | -                 | Verifica `if (valor1 > valor2)` | `15 > 15` (Falso) | - |
+| 4     | -                 | Verifica `else if (valor1 < valor2)` | `15 < 15` (Falso) | - |
+| 5     | -                 | Verifica `else if (valor1 == valor2)` | `15 == 15` (Verdadeiro) | - |
+| 6     | -                 | Exibe resultado      | `"Ambos valores são iguais"` | `"Ambos valores são iguais"` |
+
 
 ## Décimo Quarto Exercicio ##
 
