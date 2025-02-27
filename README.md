@@ -37,7 +37,7 @@ public class LeitorIdade{
 }
 ```
 
-### Teste de Mesa
+### Teste de Mesa 1 exercicio
 
 Dados:
 - **Idade (anos):** 20  
@@ -86,6 +86,28 @@ public class Eleitores{
      }
 }
 ```
+
+### Teste de Mesa 2 exercicio
+
+Dados:
+- **Total de eleitores:** 1000  
+- **Votos brancos:** 150  
+- **Votos nulos:** 100  
+- **Votos válidos:** 750  
+
+| Passo | Entrada | Variáveis | Cálculo Realizado | Valor Resultante |
+|-------|--------------------|----------------------|------------------|----------------|
+| 1     | 1000 (total)       | `total = 1000`      | -                | `total = 1000` |
+| 2     | 150 (brancos)      | `branco = 150`      | -                | `branco = 150` |
+| 3     | 100 (nulos)        | `nulo = 100`        | -                | `nulo = 100`   |
+| 4     | 750 (válidos)      | `valido = 750`      | -                | `valido = 750` |
+| 5     | -                 | -                    | `(branco / total) * 100 = (150 / 1000) * 100` | `15%` |
+| 6     | -                 | -                    | `(nulo / total) * 100 = (100 / 1000) * 100` | `10%` |
+| 7     | -                 | -                    | `(valido / total) * 100 = (750 / 1000) * 100` | `75%` |
+| 8     | -                 | Exibe resultado      | `"Porcentagem de eleitores que votaram Branco: 15%"` | - |
+| 9     | -                 | Exibe resultado      | `"Porcentagem de eleitores que votaram Nulo: 10%"` | - |
+| 10    | -                 | Exibe resultado      | `"Porcentagem de eleitores que votaram Valido: 75%"` | - |
+
 
 ## Terceiro Exercicio ##
 
