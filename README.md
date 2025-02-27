@@ -912,7 +912,6 @@ public class DespesasTrimestrais {
 
         double mediaMensal = gastoTotal / 3;
 
-        // Exibindo os resultados
         System.out.println("Gasto total no primeiro trimestre: R$ " + gastoTotal);
         System.out.println("Média mensal de gastos: R$ " + mediaMensal);
     }
