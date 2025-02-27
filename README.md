@@ -780,6 +780,127 @@ Dados:
 ## Décimo Quarto Exercicio ##
 
 ```
+/*Exercicio QUatorze*/
+
+import java.util.Scanner;
+
+public class DuracaoXadrez {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Digite a hora de início do jogo:");
+        int horaInicio = sc.nextInt();
+
+        System.out.println("Digite a hora de término do jogo:");
+        int horaFim = sc.nextInt();
+
+        int duracao;
+        if (horaInicio < horaFim) {
+            duracao = horaFim - horaInicio;
+        } else {
+            duracao = (24 - horaInicio) + horaFim;
+        }
+
+        System.out.println("O jogo durou " + duracao);
+    }
+}
+```
+
+### Teste de Mesa decimo quarto
+
+#### Hora de Início = 10, Hora de Fim = 15
+
+| Passo | Entrada | Variáveis | Cálculo Realizado       | Saída    |
+|-------|--------------------|----------------------------|------------------------|----------|
+| 1     | 10                 | `horaInicio = 10`          | -                      | -        |
+| 2     | 15                 | `horaFim = 15`             | -                      | -        |
+| 3     | -                  | Verifica `if (horaInicio < horaFim)` | `10 < 15` (Verdadeiro) | -        |
+| 4     | -                  | Calcula `horaFim - horaInicio` | `15 - 10` = 5            | `5 horas`|
+
+---
+
+#### Hora de Início = 22, Hora de Fim = 2
+
+| Passo | Entrada | Variáveis | Cálculo Realizado       | Saída    |
+|-------|--------------------|----------------------------|------------------------|----------|
+| 1     | 22                 | `horaInicio = 22`          | -                      | -        |
+| 2     | 2                  | `horaFim = 2`              | -                      | -        |
+| 3     | -                  | Verifica `if (horaInicio < horaFim)` | `22 < 2` (Falso)        | -        |
+| 4     | -                  | Executa `else`             | `(24 - 22) + 2` = 4      | `4 horas`|
+
+## Décimo Quinto exercicio
+
+```
+/*Exercicio quinze*/
+
+import java.util.Scanner;
+
+public class SalarioComHoraExtra {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Digite o numero de horas trabalhadas no mes:");
+        int horasTrabalhadas = sc.nextInt();
+
+        System.out.println("Digite o valor do salario por hora:");
+        double salarioPorHora = sc.nextDouble();
+
+        int horasNormais = 40 * 4; // 40 horas por semana * 4 semanas
+        double salarioBase = horasNormais * salarioPorHora;
+
+        double salarioTotal;
+        if (horasTrabalhadas > horasNormais) {
+            int horasExtras = horasTrabalhadas - horasNormais;
+            double valorHoraExtra = salarioPorHora * 1.5; // 50% de acréscimo
+            salarioTotal = salarioBase + (horasExtras * valorHoraExtra);
+        } else {
+            salarioTotal = salarioBase;
+        }
+
+        System.out.println("O salario total do funcionário e: RS " + salarioTotal);
+
+        sc.close();
+    }
+}
+```
+
+### Teste de Mesa 15
+
+#### Caso 1: Hora Normal
+**Dados:**
+- Horas trabalhadas: 160 horas
+- Salário por hora: R$ 10,00
+
+| Passo | Entrada  | Variáveis | Cálculo Realizado                  | Saída                 |
+|-------|----------------------------|---------------------------------|------------------------------------|-----------------------|
+| 1     | 160 horas                  | `horasTrabalhadas = 160`        | -                                  | -                     |
+| 2     | R$ 10,00                   | `salarioPorHora = 10`           | -                                  | -                     |
+| 3     | -                          | `horasNormais = 160`            | `40 horas/semana * 4 semanas`      | -                     |
+| 4     | -                          | `salarioBase = 160 * 10`        | `1600,00`                          | `Salário Base = R$ 1600,00`  |
+| 5     | -                          | Verifica `horasTrabalhadas > horasNormais` | `160 > 160` (Falso)               | -                     |
+| 6     | -                          | `salarioTotal = salarioBase`    | `salarioTotal = 1600,00`           | `Salário Total = R$ 1600,00` |
+
+---
+
+#### Caso 2: Hora Extra
+**Dados:**
+- Horas trabalhadas: 180 horas (20 horas extras)
+- Salário por hora: R$ 10,00
+
+| Passo | Entrada | Variáveis | Cálculo Realizado                  | Saída                 |
+|-------|----------------------------|---------------------------------|------------------------------------|-----------------------|
+| 1     | 180 horas                  | `horasTrabalhadas = 180`        | -                                  | -                     |
+| 2     | R$ 10,00                   | `salarioPorHora = 10`           | -                                  | -                     |
+| 3     | -                          | `horasNormais = 160`            | `40 horas/semana * 4 semanas`      | -                     |
+| 4     | -                          | `salarioBase = 160 * 10`        | `1600,00`                          | `Salário Base = R$ 1600,00`  |
+| 5     | -                          | Verifica `horasTrabalhadas > horasNormais` | `180 > 160` (Verdadeiro) | -                     |
+| 6     | -                          | `horasExtras = 180 - 160`       | `horasExtras = 20`                 | -                     |
+| 7     | -                          | `valorHoraExtra = 10 * 1.5`     | `valorHoraExtra = 15`              | -                     |
+| 8     | -                          | `salarioTotal = salarioBase + (horasExtras * valorHoraExtra)` | `salarioTotal = 1600 + (20 * 15)` | `Salário Total = R$ 1900,00` |
+
+
+
+
 
 
 
