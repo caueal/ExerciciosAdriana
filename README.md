@@ -124,10 +124,10 @@ public class Salario{
      Scanner sc = new Scanner(System.in);
  
      System.out.println("Escreva o salario do funcionario:");
-     double salario = sc.nextInt();
+     double salario = sc.nextDouble();
      
      System.out.println("Escreva o reajuste salarial em porcentagem:");
-     double reajuste = sc.nextInt();
+     double reajuste = sc.nextDouble();
      
      total = salario * (1 + (reajuste/100.0));
      
@@ -136,6 +136,20 @@ public class Salario{
      }
 }
 ```
+
+### Teste de Mesa tereceiro exercicio
+
+Dados:
+- **Salário:** 2000  
+- **Reajuste:** 10%  
+
+| Passo | Entrada | Variáveis | Cálculo Realizado | Valor Resultante |
+|-------|--------------------|----------------------|------------------|----------------|
+| 1     | 2000 (salário)     | `salario = 2000`    | -                | `salario = 2000` |
+| 2     | 10 (reajuste)      | `reajuste = 10`     | -                | `reajuste = 10`  |
+| 3     | -                 | `total = salario * (1 + (reajuste / 100.0))` | `2000 * (1 + (10 / 100.0))` | `total = 2200.0` |
+| 4     | -                 | Exibe resultado      | `"O novo salario sera de: 2200.0"` | - |
+
 
 ## Quarto Exercicio ##
 
