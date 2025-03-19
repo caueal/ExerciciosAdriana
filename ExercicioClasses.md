@@ -44,6 +44,5 @@
 ## Diagrama UML das classes: 
 
 
-![DiagramaImagens](https://github.com/user-attachments/assets/98ac615d-7ef8-47dd-a8a5-e6a21b625d0a)
-
+![DiagramaImagens](https://github.com/user-attachments/assets/61f29d06-5b41-4e11-a02b-1be8254dfb9c)
 
