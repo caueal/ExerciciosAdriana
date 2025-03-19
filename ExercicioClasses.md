@@ -41,5 +41,9 @@
 (Canetas)
 
 
+## Diagrama UML das classes: 
+
+
+![DiagramaImagens](https://github.com/user-attachments/assets/98ac615d-7ef8-47dd-a8a5-e6a21b625d0a)
 
 
