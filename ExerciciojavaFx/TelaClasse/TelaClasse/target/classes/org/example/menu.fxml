@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.MenuController">
+   <children>
+      <Label alignment="CENTER" layoutX="-41.0" layoutY="31.0" prefHeight="17.0" prefWidth="725.0" text="Visualizador de classes" textAlignment="CENTER">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="8.0" layoutY="96.0" prefHeight="295.0" prefWidth="628.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btn_cachorro" mnemonicParsing="false" onAction="#btn_cachorro" text="Cachorro" />
+            <Button fx:id="btn_caneta" mnemonicParsing="false" onAction="#btn_caneta" text="Caneta" GridPane.rowIndex="1" />
+            <Button fx:id="btn_carro" mnemonicParsing="false" onAction="#btn_carro" text="Carro" GridPane.rowIndex="2" />
+            <Button fx:id="btn_ferramenta" mnemonicParsing="false" onAction="#btn_ferramenta" text="Ferramenta" GridPane.rowIndex="3" />
+            <Button fx:id="btn_instrumento" mnemonicParsing="false" onAction="#btn_instrumento" text="Instrumento" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="1" />
+            <Button fx:id="btn_moeda" mnemonicParsing="false" onAction="#btn_moeda" text="Moeda" GridPane.columnIndex="1" />
+            <Button fx:id="btn_movel" mnemonicParsing="false" onAction="#btn_movel" text="Movel" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="btn_peixe" mnemonicParsing="false" onAction="#btn_peixe" text="Peixe" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="btn_pessoa" mnemonicParsing="false" onAction="#btn_pessoa" text="Pessoa" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="btn_impressora" mnemonicParsing="false" onAction="#btn_impressora" text="Impressora" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
